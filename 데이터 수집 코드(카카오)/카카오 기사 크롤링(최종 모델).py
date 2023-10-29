@@ -6,7 +6,7 @@ import csv
 
 def KakaoArticle(start_date, end_date): # 각 파라미터에 대한 입력값 형식은 '2023.10.26'으로 str 형식 이여야함
   # csv 파일 쓰기
-  f = open("news(2021.03.02).csv", "w", newline="", encoding="utf-8")
+  f = open("news(2021.12.31).csv", "w", newline="", encoding="utf-8")
   wr = csv.writer(f)
   index = ["기사날짜", "기사제목", "네이버 뉴스 url", "기사내용"]
   wr.writerow(index)
@@ -76,4 +76,4 @@ def KakaoArticle(start_date, end_date): # 각 파라미터에 대한 입력값 �
     page += 1
   f.close()
 
-KakaoArticle('2021.03.02','2021.03.02')
+KakaoArticle('2021.12.31','2021.12.31')
